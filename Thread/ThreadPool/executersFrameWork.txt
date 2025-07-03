@@ -1,0 +1,43 @@
+Executors FrameWork in Java:
+
+Executors framework was introduced in java 5 as a part of java.util.concurrent
+package to simplify the development of concurrent applications by abstracting away
+many of the complexities involved in creating and managing threads.
+
+Disadvantages:
+1. Manual Thread Management.
+2. Resource Management.
+3. Scalability
+4. Thread reuse
+5. Error handling
+
+=> Executors framework have 3 core interfaces:
+1. Executor
+2. Executor Services
+3. Scheduled Executor services
+
+Difference between Runnable and callable
+1. Runnable doesn't return but callable returns
+2. Runnable have run method to override but callable have call method to override
+3. It doesn't throws exception in their family but callable throws exception in their family.
+        public void run() Can't throw exception here{
+        Thread.sleep() giving erroe here
+        }
+        public void call() throws exception{
+        Thread.sleep(); Not giving any error
+        }
+
+        We have seen different methods in Execution Framework.
+        1. submit(for runnable)
+        2. submit(for callable)
+        3. submit(for runnable, for print something)
+        4. shutdown()
+        5. shutdownnow()
+        6. awaitTermination()
+        7. isShutdown()
+
+Future:-
+            f.get()
+            f.isDone()
+            f.isCancelled()
+            f.get(time) with time also

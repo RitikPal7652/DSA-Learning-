@@ -1,0 +1,38 @@
+
+    /**/ Critical section:  The part of program in which common resources is sharing is known as critical section and it can be
+     * resolved by synchronized keyword. Synchronized can be method also.
+
+    /**/ * When multiple threads working on same shared resources and their timing uphealed then their outcome
+     * result also be uphealed.
+
+
+    /**/ Mutual Exclusion: No multiple threads can access simultaneously at a time. Only one thread can access
+        at a time.
+
+    /**/ Locking:  It means we use the concept of locking.
+                Two types of locks are there:
+                1. Intrinsic: These are built into every object in java. You don't see them, but they are there.
+                    When you use a synchronized keyword, you are using these automatic locks.
+                2. These r more advanced locks you can control yourself using the Lock class from
+                    java.util.concurrent.locks. You explicitly say when to lock and unlock, giving you more control
+                    over how and when people can write in the notebook.
+
+    /**/ Runnable Interface: Object didn't formed for runnable interface. Anonymous class is formed.
+    Anonymous class: An anonymous class in Java is a type of nested class that doesn't have a name. It is defined and
+     instantiated in a single expression, typically used to extend a superclass or implement an
+     interface. This feature allows you to create a one-time-use class without the need to formally
+      declare a new class.
+
+   /**/ Recentrant Lock :
+        1. Lock
+        2. unlock
+        3. tryLock : two types with timing and without timing
+        4. deadLine prevention
+        5. lockInterruptibly
+        6. Fairness
+
+    /**/ Disadvantages of synchronous
+        1. Not guaranty Fairness
+        2. Indefinite blocking
+        3. Interruptiblity
+        4. Read and write locking

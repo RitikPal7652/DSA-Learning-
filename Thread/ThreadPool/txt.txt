@@ -1,0 +1,9 @@
+Thread Pool: Collection of pre-initialized threads that are ready to be performed a
+task.
+
+Why it is important?
+1. Resource Management.
+2. Response Time
+3. Control over thread count: restricts on making max thread.
+
+Future:-

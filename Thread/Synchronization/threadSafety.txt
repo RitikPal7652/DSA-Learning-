@@ -1,0 +1,7 @@
+package Thread.Synchronization;
+
+/**
+ * A thing can be thread safe only when it ensures that there is no race condition
+ * and no unexpected error and no data corruption is there when multiple threads try
+ * to access the block of code or object.
+ */
